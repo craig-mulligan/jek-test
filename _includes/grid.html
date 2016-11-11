@@ -1,0 +1,15 @@
+<section class="section">
+  <div class="container">
+    {%
+      include_relative _includes/_partials/section-head.html
+      title=include.title
+      category=include.category
+      lead=include.lead
+    %}
+    {%
+      include_relative _includes/_partials/grid.html
+      items=include.items
+      itemsPerRow=include.itemsPerRow
+    %}
+  </div>
+</section>

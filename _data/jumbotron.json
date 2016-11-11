@@ -1,6 +1,6 @@
 {
   "title": "Lander",
-  "lead": "A zero configuration website for software projects",
+  "lead": "A zero configuration website generator for software projects",
   "meta": "version - 1.0.0",
   "action": {
     "href": "#",

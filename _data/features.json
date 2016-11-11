@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Feature A",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  },
+  {
+    "title": "Feature B",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  },
+  {
+    "title": "Feature C",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  },
+  {
+    "title": "Feature D",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  },
+  {
+    "title": "Feature E",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  },
+  {
+    "title": "Feature F",
+    "description": "This feature is dope",
+    "image": "assets/icon.png"
+  }
+]

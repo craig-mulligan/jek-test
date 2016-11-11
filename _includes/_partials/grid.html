@@ -1,0 +1,21 @@
+<div class="row">
+  
+  {% if include.itemsPerRow %}
+    {% assign itemsPerRow = include.itemsPerRow %}
+  {% else %}
+    {% assign itemsPerRow = 3 %}
+  {% endif %}
+
+  {% for item in include.items %}
+    {% assign loopindex = forloop.index | modulo: itemsPerRow %}
+    <div class="item col-md-{{ 12 | divided_by: itemsPerRow }}">
+      <img src="{{ item.image | prepend: site.baseurl }}">
+      <h5>{{ item.title }}</h5>
+      <p class="item__description">{{ item.description }}</p>
+    </div>
+    {% if loopindex == 0 %}
+      </div>
+      <div class="row">
+    {% endif %}
+  {% endfor %}
+</div>
