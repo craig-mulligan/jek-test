@@ -1,0 +1,9 @@
+{
+  "title": "Lander",
+  "lead": "A zero configuration website for software projects",
+  "meta": "version - 1.0.0",
+  "action": {
+    "href": "#",
+    "text": "Try lander"
+  }
+}
