@@ -1,20 +1,25 @@
 ---
 layout: default
 title: index
-permalink: /
 ---
-
-{% include_relative _includes/jumbotron.html
-  title=site.data.jumbotron.title
+{% include nav.html
+  title=site.title
+  links=site.data.nav
+%}
+{% include jumbotron.html
+  title=site.title
   lead=site.data.jumbotron.lead
   meta=site.data.jumbotron.meta
   action=site.data.jumbotron.action
+  spacingClass="mb-0"
 %}
-{% include_relative _includes/grid.html
+{% include grid.html
+  id="features"
   category="Features"
   title="We do Everything"
   lead="Well, almost"
   items=site.data.features
   itemsPerRow=3
+  darkMode=true
+  spacingClass="p-3"
 %}
-{% include_relative _includes/list.html %}

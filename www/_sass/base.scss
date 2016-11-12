@@ -1,0 +1,19 @@
+$darkBg: #313134;
+$darkColor: #ffffff;
+
+.section__header {
+  text-align: center;
+}
+
+.section--inv {
+  background: $darkBg;
+  color: $darkColor;
+}
+
+.grid__item {
+  text-align: center;
+}
+
+.grid__item__image {
+  max-width: 5rem;
+}

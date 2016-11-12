@@ -1,4 +1,11 @@
-title: Your awesome title
+title: Lander
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+layouts_dir:  www/_layouts
+data_dir:     www/_data
+includes_dir: www/_includes
+css_dir: www/css
+assets_dir: www/assets
+sass:
+    sass_dir: www/_sass

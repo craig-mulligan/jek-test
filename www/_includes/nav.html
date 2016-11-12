@@ -1,0 +1,13 @@
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+  <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+    <a class="navbar-brand" href="#">{{ include.title }}</a>
+    <ul class="nav navbar-nav">
+      {% for link in include.links %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ link.href }}">{{ link.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,16 @@
+<section id="{{ include.id }}" class="section {{ include.spacingClass }} {% if include.darkMode==true %} section--inv {% endif %} grid">
+  <div class="container">
+    {%
+      include _partials/section-head.html
+      title=include.title
+      category=include.category
+      lead=include.lead
+      spacing=include.spacingClass
+    %}
+    {%
+      include _partials/grid.html
+      items=include.items
+      itemsPerRow=include.itemsPerRow
+    %}
+  </div>
+</section>

@@ -1,5 +1,5 @@
 <div class="row">
-  
+
   {% if include.itemsPerRow %}
     {% assign itemsPerRow = include.itemsPerRow %}
   {% else %}
@@ -8,10 +8,10 @@
 
   {% for item in include.items %}
     {% assign loopindex = forloop.index | modulo: itemsPerRow %}
-    <div class="item col-md-{{ 12 | divided_by: itemsPerRow }}">
-      <img src="{{ item.image | prepend: site.baseurl }}">
-      <h5>{{ item.title }}</h5>
-      <p class="item__description">{{ item.description }}</p>
+    <div class="grid__item col-md-{{ 12 | divided_by: itemsPerRow }}">
+      <img class="grid__item__image" src="{{ item.image | prepend: site.baseurl }}">
+      <h5 class="grid__item__title">{{ item.title }}</h5>
+      <p class="grid__item__description">{{ item.description }}</p>
     </div>
     {% if loopindex == 0 %}
       </div>
